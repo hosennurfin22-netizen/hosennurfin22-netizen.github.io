@@ -78,6 +78,20 @@ nav.top a:hover{color:var(--brass);}
 
 /* ---------- Hero ---------- */
 .hero{padding:64px 0 40px; border-bottom:1px solid var(--line);}
+.hero-top{display:flex; justify-content:space-between; align-items:flex-start; gap:36px;}
+.hero-text{flex:1; min-width:0;}
+.hero-photo{
+  width:132px; height:132px;
+  object-fit:cover;
+  border-radius:50%;
+  border:2px solid var(--brass);
+  padding:4px;
+  flex-shrink:0;
+}
+@media (max-width:640px){
+  .hero-top{flex-direction:column-reverse; align-items:center; text-align:center;}
+  .hero-photo{width:104px; height:104px;}
+}
 .eyebrow{
   font-family:var(--mono);
   font-size:12.5px;
